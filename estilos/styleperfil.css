@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mensaje-exito {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white; 
+    z-index: 1000; 
+    width: 50%; 
+    text-align: center;
+    display: none;
+}
+
+.mensaje-exito-estado {
+    background-color: #44c6dd;
+}
+
+.mensaje-exito p {
+    font-size: 20px;
+}
+
+.profile-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.profile-container a.icon-close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #333;
+    cursor: pointer;
+}
+
+#upload-foto input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Estilos para los campos editables */
+
+input[type="text"], input[type="email"], input[type="password"] {
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos para los botones */
+a, button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none; /* Eliminar borde de los botones */
+    cursor: pointer;
+}
+
+a:hover, button:hover {
+    background-color: #0056b3;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Alineación de los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;                /* Usar flexbox para alinear elementos horizontalmente */
+    align-items: center;         /* Centrar verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre la imagen y la vista previa */
+    margin-top: 15px;           /* Espacio superior para separar del contenido anterior */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block; /* Asegura que la imagen esté siempre alineada */
+}
+
+
+#foto-input {
+    display: none; /* Oculta el input de archivo */
+}
+
+.image-wrapper {
+    position: relative; /* Posición relativa */
+    display: inline-block; /* Ajusta el tamaño al contenido */
+    margin-right: 15px; /* Espacio entre elementos, si es necesario */
+}
+
+.overlay {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Alinear al borde superior */
+    left: 0; /* Alinear al borde izquierdo */
+    right: 0; /* Alinear al borde derecho */
+    bottom: 20px; /* Alinear al borde inferior */
+    background: rgba(0, 0, 0, 0.3); /* Color de fondo */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centrar texto horizontalmente */
+    align-items: center; /* Centrar texto verticalmente */
+    border-radius: 50%; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+#cancel-button {
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none; 
+}

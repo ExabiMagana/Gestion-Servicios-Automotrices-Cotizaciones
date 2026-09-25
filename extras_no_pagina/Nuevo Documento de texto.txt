@@ -1,0 +1,12 @@
+Debo poner como predeterminado en el campo de especialidad en mecánicos: Ninguna
+Debo agregar el campo estado y el campo de foto
+Debo crear la función para calcular edad en las consultas de los mecanicos
+
+Debo volver la unidad de medida como tipo Enum y predeterminado en km
+
+
+https://chatgpt.com/share/66ed128d-6168-800c-a15d-735fbfc22e3a
+
+
+Para la vista de vistas
+https://chatgpt.com/share/66f3bcea-3214-800c-b3e0-e1bd7369b535
